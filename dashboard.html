@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Bank Name</h2>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="transaction_history.html">Transactions</a></li>
+                    <li><a href="transfer_funds.html">Transfer Funds</a></li>
+                    <li><a href="set.html">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Welcome, <span id="userName"></span></h1>
+            </header>
+            <section class="account-overview">
+                <h2>Account Balance: <span id="bal"></span></h2>
+                <button onclick="showTransferModal()">Transfer Funds</button>
+                <button onclick="showPayBillModal()">Pay Bill</button>
+            </section>
+            <section class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <ul id="transaction-list">
+                    <!-- Populate with recent transactions -->
+                </ul>
+            </section>
+            <section class="notifications">
+                <h3>Notifications</h3>
+                <p>No new notifications.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Transfer Funds Modal -->
+    <div id="transferModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeTransferModal()">&times;</span>
+            <h2>Transfer Funds</h2>
+            <form id="transferForm">
+                <label for="recipientAccount">Recipient Account Number:</label>
+                <input type="text" id="recipientAccount" name="recipientAccount" required>
+
+                <label for="recipientName">Recipient Name:</label>
+                <input type="text" id="recipientName" name="recipientName" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <button type="button" onclick="processTransfer()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pay Bill Modal -->
+    <div id="payBillModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePayBillModal()">&times;</span>
+            <h2>Pay Bill</h2>
+            <form id="payBillForm">
+                <label for="billAccount">Bill Account Number:</label>
+                <input type="text" id="billAccount" name="billAccount" required>
+
+                <label for="billAmount">Amount:</label>
+                <input type="number" id="billAmount" name="billAmount" required>
+
+                <button type="button" onclick="processPayBill()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

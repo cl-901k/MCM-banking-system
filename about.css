@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #0056b3; /* Primary color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.mission-vision h2 {
+    color: #0056b3;
+}
+
+/* Our Story Section */
+.our-story {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.our-story h2 {
+    color: #0056b3;
+}
+
+/* Team Section */
+.team {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.team h2 {
+    color: #0056b3;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-photo {
+    width: 100px; /* Set a fixed width for team photos */
+    height: 100px; /* Set a fixed height for team photos */
+    border-radius: 50%; /* Make the photos circular */
+    margin-right: 20px; /* Space between photo and text */
+}
+
+.team-member h3 {
+    margin: 0;
+    color: #0056b3;
+}
+
+.team-member p {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #0056b3; /* Darker shade for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00; /* Highlight color for footer links */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column; /* Stack photo and text on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .team-photo {
+        margin-bottom: 10px; /* Add space below the photo */
+    }
+}

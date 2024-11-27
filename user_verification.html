@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Verification</title>
+    <link rel="stylesheet" href="user_verification.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>User Registration Verification</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td id="status-1">Pending</td>
+                <td><button onclick="verifyUser(1)">Verify</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td id="status-2">Pending</td>
+                <td><button onclick="verifyUser(2)">Verify</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="user_verification.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #0056b3; /* Primary color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.contact-info h2 {
+    color: #0056b3;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #0056b3;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.contact-form h2 {
+    color: #0056b3;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #004494; /* Darker shade on hover */
+}
+
+/* Map Section */
+.map {
+    margin: 20px 0;
+}
+
+.map h2 {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background: #0056b3; /* Darker shade for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00; /* Highlight color for footer links */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .contact-info,
+    .contact-form {
+        margin: 10px 0;
+    }
+
+    .map iframe {
+        width: 100%; /* Full width for map on small screens */
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}

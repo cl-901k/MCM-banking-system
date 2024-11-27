@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Bank System</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Create Your Account</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="registerForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="securityQuestion">Security Question:</label>
+                <select id="securityQuestion" name="securityQuestion" required>
+                    <option value="" disabled selected>Select a question</option>
+                    <option value="pet">What is the name of your first pet?</option>
+                    <option value="mother_maiden">What is your mother's maiden name?</option>
+                    <option value="city">What city were you born in?</option>
+                    <option value="favorite_color">What is your favorite color?</option>
+                </select>
+                
+                <label for="securityAnswer">Answer:</label>
+                <input type="text" id="securityAnswer" name="securityAnswer" required>
+
+                <label for="otpMethod">Send OTP via:</label>
+                <select id="otpMethod" name="otpMethod" required>
+                    <option value="phone">Phone Number</option>
+                    <option value="email">Email</option>
+                </select>
+
+                <button type="button" class="cta-button" onclick="sendOtp()">Send OTP</button>
+
+                <div id="otpSection" style="display: none;">
+                    <label for="otp">Enter OTP:</label>
+                    <input type="text" id="otp" name="otp" required>
+                    <button type="submit" class="cta-button">Register</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MCM Bank. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

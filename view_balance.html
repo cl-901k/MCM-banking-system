@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Account Balance</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Account Balance</h1>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="logout.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="service-container">
+            <h2>Your Current Balance</h2>
+            <p id="balance">Loading...</p>
+            <button onclick="fetchBalance()">Refresh Balance</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Our Bank. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simulated function to fetch balance
+        function fetchBalance() {
+            // In a real application, you would fetch this data from your server
+            const balance = 1000.00; // Example balance
+            document.getElementById('balance').innerText = `$${balance.toFixed(2)}`;
+        }
+
+        // Fetch balance on page load
+        window.onload = fetchBalance;
+    </script>
+</body>
+</html>

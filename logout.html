@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logout-container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-container">
+        <h1>Logout Successful</h1>
+        <p>You have been logged out successfully. Thank you for using our banking services.</p>
+        <a href="login.html" class="btn">Login Again</a>
+        <a href="index.html" class="btn">Go to Homepage</a>
+    </div>
+
+    <script>
+        // Optional: Clear session data or tokens if necessary
+        sessionStorage.clear(); // Example for clearing session storage
+        // Redirect to homepage after a few seconds
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 5000); // Redirects after 5 seconds
+    </script>
+</body>
+</html>
